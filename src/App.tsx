@@ -8,7 +8,7 @@ function App() {
         <div className="container header-inner">
           <div className="logo">
             <img src="/logo.webp" alt="Landhuis Logo" className="logo-img" />
-            <span className="logo-text">Landhuis</span>
+            <span className="logo-text">Landhuis Installatietechniek</span>
           </div>
         </div>
       </header>
