@@ -7,7 +7,7 @@ function App() {
       <header className="header">
         <div className="container header-inner">
           <div className="logo">
-            <img src="/logo.svg" alt="Landhuis Logo" className="logo-img" />
+            <img src="/logo.webp" alt="Landhuis Logo" className="logo-img" />
             <span className="logo-text">Landhuis</span>
           </div>
         </div>
