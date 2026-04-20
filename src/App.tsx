@@ -8,7 +8,10 @@ function App() {
         <div className="container header-inner">
           <div className="logo">
             <img src="/logo.svg" alt="Landhuis Installatietechniek Logo" className="logo-img" />
-            <span className="logo-text">Landhuis Installatietechniek</span>
+            <span className="logo-text">
+              <span className="logo-name">Landhuis</span>
+              <span className="logo-sub">Installatietechniek</span>
+            </span>
           </div>
         </div>
       </header>
