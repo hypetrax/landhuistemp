@@ -64,7 +64,7 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2070');
+  background-image: url('/foto-bus.webp');
   background-size: cover;
   background-position: center;
   z-index: 0;
