@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Wrench, Thermometer, Fan, Zap } from 'lucide-react';
+import { Phone, Mail, MapPin, Wrench, Thermometer, Fan, Zap, Star } from 'lucide-react';
 import './App.css';
 
 function App() {
@@ -34,6 +34,17 @@ function App() {
             <p className="hero-description">
               Landhuis Installatietechniek is uw gecertificeerde <strong>installateur</strong> gespecialiseerd in <strong>warmtepomp installatie</strong>, <strong>airconditioning</strong> en <strong>elektrotechniek</strong>. Wij realiseren duurzame installaties voor woning en bedrijf in regio Hardenberg, Coevorden en Emmen.
             </p>
+
+            <div className="review-badge">
+              <div className="stars">
+                <Star size={16} fill="currentColor" />
+                <Star size={16} fill="currentColor" />
+                <Star size={16} fill="currentColor" />
+                <Star size={16} fill="currentColor" />
+                <Star size={16} fill="currentColor" />
+              </div>
+              <span className="review-text"><strong>5.0</strong> Google Review</span>
+            </div>
             
             <div className="cta-group">
               <a href="tel:0636499203" className="btn btn-primary" aria-label="Bel ons installatiebedrijf">
