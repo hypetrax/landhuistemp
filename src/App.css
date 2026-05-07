@@ -136,7 +136,7 @@
 }
 
 .review-badge {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 32px;
@@ -145,6 +145,12 @@
   border-radius: 8px;
   width: fit-content;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition);
+}
+
+.review-badge:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(251, 191, 36, 0.45);
 }
 
 .stars {
@@ -345,5 +351,16 @@
       rgba(26, 37, 53, 0.8) 40%, 
       rgba(26, 37, 53, 0.4) 70%,
       rgba(26, 37, 53, 0) 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

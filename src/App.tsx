@@ -1,6 +1,8 @@
 import { Phone, Mail, MapPin, Wrench, Thermometer, Fan, Zap, Star } from 'lucide-react';
 import './App.css';
 
+const googleReviewUrl = 'https://www.google.com/search?sca_esv=8639ec9b40ab010a&rlz=1C1YTUH_nlNL1077NL1077&sxsrf=ANbL-n4qxiAUQQ-QrNWoCdx6O2GFDyjRvw:1778155854713&q=landhuis+installatietechniek&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOa6XxJpnzHaoaMbv0rhwx7gmES-dMzjyx0rdwnq59fAzYZ3_Sp42HsRCs7vFybDgvI1FbGI%3D&uds=ALYpb_l6DyU7gEufbC-T-1UgqmR078JKKG58287Rit68f5Y6w9Q_BgITAEFRQf4ykzjWLc-WoZTObHv9cLAriEtEH4MfmaVkmKpXNZwTTZcID1I-nEEGchDXHbyCPg2ErIb-csdf1GsX&sa=X&sqi=2&ved=2ahUKEwiE-szgkqeUAxUo3wIHHfGwIrYQ3PALegQINRAF';
+
 function App() {
   return (
     <div className="coming-soon">
@@ -35,16 +37,22 @@ function App() {
               Landhuis Installatietechniek is uw gecertificeerde <strong>installateur</strong> gespecialiseerd in <strong>warmtepomp installatie</strong>, <strong>airconditioning</strong> en <strong>elektrotechniek</strong>. Wij realiseren duurzame installaties voor woning en bedrijf in regio Hardenberg, Coevorden en Emmen.
             </p>
 
-            <div className="review-badge">
+            <a
+              href={googleReviewUrl}
+              className="review-badge"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Bekijk onze Google reviews"
+            >
               <div className="stars">
-                <Star size={16} fill="currentColor" />
-                <Star size={16} fill="currentColor" />
-                <Star size={16} fill="currentColor" />
-                <Star size={16} fill="currentColor" />
-                <Star size={16} fill="currentColor" />
+                <Star size={16} fill="currentColor" aria-hidden="true" />
+                <Star size={16} fill="currentColor" aria-hidden="true" />
+                <Star size={16} fill="currentColor" aria-hidden="true" />
+                <Star size={16} fill="currentColor" aria-hidden="true" />
+                <Star size={16} fill="currentColor" aria-hidden="true" />
               </div>
               <span className="review-text"><strong>5.0</strong> Google Review</span>
-            </div>
+            </a>
             
             <div className="cta-group">
               <a href="tel:0636499203" className="btn btn-primary" aria-label="Bel ons installatiebedrijf">
