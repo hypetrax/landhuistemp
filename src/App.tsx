@@ -72,26 +72,26 @@ function App() {
           </section>
 
           <section className="services-grid" aria-label="Onze Diensten">
-            <div className="service-card service-card-featured">
+            <a className="service-card service-card-featured" href="/warmtepomp-installateur-hardenberg/">
               <div className="service-icon"><Thermometer size={28} aria-hidden="true" /></div>
               <h2>Warmtepomp laten installeren</h2>
               <p>Duurzame verwarming en koeling door uw erkende installateur in de regio Hardenberg.</p>
-            </div>
-            <div className="service-card service-card-featured">
+            </a>
+            <a className="service-card service-card-featured" href="/airco-installatie-hardenberg/">
               <div className="service-icon"><Fan size={28} aria-hidden="true" /></div>
               <h2>Airco installatie</h2>
               <p>Vakkundige installatie van airco systemen voor comfortabel koelen en verwarmen.</p>
-            </div>
-            <div className="service-card">
+            </a>
+            <a className="service-card" href="/elektrotechniek-hardenberg/">
               <div className="service-icon"><Zap size={28} aria-hidden="true" /></div>
               <h2>Elektrotechniek</h2>
               <p>Gecertificeerde elektrotechnische installaties en onderhoud.</p>
-            </div>
-            <div className="service-card">
+            </a>
+            <a className="service-card" href="/loodgieter-hardenberg/">
               <div className="service-icon"><Wrench size={28} aria-hidden="true" /></div>
               <h2>Loodgieter</h2>
               <p>Uw installatiebedrijf voor sanitair, water- en afvoerleidingen.</p>
-            </div>
+            </a>
           </section>
         </div>
       </main>

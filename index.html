@@ -37,7 +37,7 @@
         "@type": "LocalBusiness",
         "name": "Landhuis Installatietechniek",
         "image": "https://www.landhuisinstallatietechniek.nl/logo.webp",
-        "description": "Gecertificeerd installateur in Hardenberg. Specialist in warmtepompen, airconditioning en elektrotechniek.",
+        "description": "Gecertificeerd installateur in Hardenberg. Specialist in warmtepompen, airconditioning, elektrotechniek en loodgieterswerk.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Hessenweg 13",
@@ -51,15 +51,115 @@
           "longitude": 6.619
         },
         "url": "https://www.landhuisinstallatietechniek.nl",
-        "sameAs": "https://www.google.com/search?q=landhuis+installatietechniek",
         "telephone": "+31636499203",
         "email": "landhuisinstallatietechniek@hotmail.com",
-        "priceRange": "$$"
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Hardenberg"
+          },
+          {
+            "@type": "City",
+            "name": "Coevorden"
+          },
+          {
+            "@type": "City",
+            "name": "Emmen"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Installatiediensten",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Warmtepomp installatie",
+                "areaServed": "Hardenberg, Coevorden en Emmen"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Airco installatie",
+                "areaServed": "Hardenberg, Coevorden en Emmen"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Elektrotechniek",
+                "areaServed": "Hardenberg, Coevorden en Emmen"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Loodgieter",
+                "areaServed": "Hardenberg, Coevorden en Emmen"
+              }
+            }
+          ]
+        }
       }
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header>
+        <a href="/" aria-label="Landhuis Installatietechniek homepage">
+          <img src="/logo.svg" alt="Landhuis Installatietechniek Logo" width="180" height="60" />
+        </a>
+      </header>
+      <main>
+        <h1>Warmtepomp en airco installatie in Hardenberg</h1>
+        <p>
+          Landhuis Installatietechniek helpt woningen en bedrijven met warmtepompen,
+          airco installatie en vakkundige elektrotechniek. Duurzaam verwarmen,
+          comfortabel koelen en betrouwbaar installeren in regio Hardenberg, Coevorden
+          en Emmen.
+        </p>
+        <ul>
+          <li>Energiezuinig verwarmen</li>
+          <li>Comfortabel koelen</li>
+        </ul>
+        <p>
+          <a href="tel:0636499203">Bel 06 - 36 49 92 03</a>
+          <a href="https://wa.me/31636499203">WhatsApp Landhuis Installatietechniek</a>
+          <a href="mailto:landhuisinstallatietechniek@hotmail.com">landhuisinstallatietechniek@hotmail.com</a>
+        </p>
+        <section aria-label="Onze diensten">
+          <h2>Installatiediensten</h2>
+          <ul>
+            <li><a href="/warmtepomp-installateur-hardenberg/">Warmtepomp installateur Hardenberg</a></li>
+            <li><a href="/airco-installatie-hardenberg/">Airco installatie Hardenberg</a></li>
+            <li><a href="/elektrotechniek-hardenberg/">Elektrotechniek Hardenberg</a></li>
+            <li><a href="/loodgieter-hardenberg/">Loodgieter Hardenberg</a></li>
+          </ul>
+        </section>
+        <address>Hessenweg 13, 7771 CH Hardenberg</address>
+        <img src="/foto-bus.webp" alt="Bedrijfsbus van Landhuis Installatietechniek" width="680" height="397" />
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
