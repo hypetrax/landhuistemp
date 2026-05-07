@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Wrench, Thermometer, Fan, Zap, Star } from 'lucide-react';
+import { Phone, Mail, MapPin, Wrench, Thermometer, Fan, Zap, Star, CheckCircle } from 'lucide-react';
 import './App.css';
 
 const googleReviewUrl = 'https://www.google.com/search?sca_esv=8639ec9b40ab010a&rlz=1C1YTUH_nlNL1077NL1077&sxsrf=ANbL-n4qxiAUQQ-QrNWoCdx6O2GFDyjRvw:1778155854713&q=landhuis+installatietechniek&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOa6XxJpnzHaoaMbv0rhwx7gmES-dMzjyx0rdwnq59fAzYZ3_Sp42HsRCs7vFybDgvI1FbGI%3D&uds=ALYpb_l6DyU7gEufbC-T-1UgqmR078JKKG58287Rit68f5Y6w9Q_BgITAEFRQf4ykzjWLc-WoZTObHv9cLAriEtEH4MfmaVkmKpXNZwTTZcID1I-nEEGchDXHbyCPg2ErIb-csdf1GsX&sa=X&sqi=2&ved=2ahUKEwiE-szgkqeUAxUo3wIHHfGwIrYQ3PALegQINRAF';
@@ -30,12 +30,17 @@ function App() {
               Binnenkort online: Onze nieuwe website
             </div>
             <h1 className="hero-title">
-              Vakkundig <span className="text-accent">Installatiebedrijf</span> <br />
-              in Hardenberg.
+              <span className="text-accent">Warmtepomp</span> en airco <br />
+              installatie in Hardenberg.
             </h1>
             <p className="hero-description">
-              Landhuis Installatietechniek is uw gecertificeerde <strong>installateur</strong> gespecialiseerd in <strong>warmtepomp installatie</strong>, <strong>airconditioning</strong> en <strong>elektrotechniek</strong>. Wij realiseren duurzame installaties voor woning en bedrijf in regio Hardenberg, Coevorden en Emmen.
+              Landhuis Installatietechniek helpt woningen en bedrijven met <strong>warmtepompen</strong>, <strong>airco installatie</strong> en vakkundige elektrotechniek. Duurzaam verwarmen, comfortabel koelen en betrouwbaar installeren in regio Hardenberg, Coevorden en Emmen.
             </p>
+
+            <div className="hero-benefits" aria-label="Belangrijkste voordelen">
+              <span><CheckCircle size={18} aria-hidden="true" /> Energiezuinig verwarmen</span>
+              <span><CheckCircle size={18} aria-hidden="true" /> Comfortabel koelen</span>
+            </div>
 
             <a
               href={googleReviewUrl}
@@ -67,15 +72,15 @@ function App() {
           </section>
 
           <section className="services-grid" aria-label="Onze Diensten">
-            <div className="service-card">
+            <div className="service-card service-card-featured">
               <div className="service-icon"><Thermometer size={28} aria-hidden="true" /></div>
-              <h2>Warmtepomp Installatie</h2>
-              <p>Duurzame verwarming en koeling door uw erkende installateur.</p>
+              <h2>Warmtepomp laten installeren</h2>
+              <p>Duurzame verwarming en koeling door uw erkende installateur in de regio Hardenberg.</p>
             </div>
-            <div className="service-card">
+            <div className="service-card service-card-featured">
               <div className="service-icon"><Fan size={28} aria-hidden="true" /></div>
-              <h2>Airconditioning</h2>
-              <p>Vakkundige installatie van airco systemen voor optimaal comfort.</p>
+              <h2>Airco installatie</h2>
+              <p>Vakkundige installatie van airco systemen voor comfortabel koelen en verwarmen.</p>
             </div>
             <div className="service-card">
               <div className="service-icon"><Zap size={28} aria-hidden="true" /></div>
